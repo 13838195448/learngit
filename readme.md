@@ -22,9 +22,20 @@ git   分布式版本控制系统
 	git diff 文件名  查看文件与之前的不同
 
 提交修改和提交新文件是一样的两步   1.git add 2.git commit 
+	git log  查看历史记录
 
- 
+ 	git log --pretty=oneline  把历史记录显示成一行
 
+
+	回退到上一个版本
+		git reset --hard HEAD^
+	查看文件
+	cat 文件夹名称
+	
+	回退到指定版本  git reset --hard  版本号
+
+	记录每一次命令  	git reflog
+	
 
 
 
