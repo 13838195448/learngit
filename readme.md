@@ -43,7 +43,7 @@ git   分布式版本控制系统
 	把暂存区的修改撤销掉 		git reset HEAD file （ 文件做了修改 已经 add 到暂存区）
 
 
-My stupid boss still prefers SVN
+
 
 
 
