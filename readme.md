@@ -54,4 +54,8 @@ git   分布式版本控制系统
 	git clone 地址
 
 
-	
+切换分支
+ git checkout 分支名 
+
+合并分支
+ git merge 分支名
