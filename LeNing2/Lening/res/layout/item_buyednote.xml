@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_buyednote_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="标题"
+        android:textColor="@color/zywz"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_buyednote_context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:text="内容"
+        android:textColor="@color/ptdl"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_buyednote_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="来着课件"
+            android:textColor="@color/ciyao"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_buyednote_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="时间"
+            android:textColor="@color/ciyao"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View 
+        android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/dise"/>
+</LinearLayout>

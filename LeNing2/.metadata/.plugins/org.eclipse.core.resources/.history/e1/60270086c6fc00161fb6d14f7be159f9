@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zd_truth_pic_bg_down"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#255A8E" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/zd_truth_pic_bg_up" />
+
+        <ImageView
+            android:id="@+id/iv_start_zhenxiang_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_zx_wenti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="sdfasdffffffffffffffffffffasdddddddddddddddddddddddddddddd中按时打算打算发顺丰而过"
+        android:textColor="#FAFAFB"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lv_zx_xuan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_zx_looktruth"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/zd_truth_btn_view"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rl_zx_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_zx_ans"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/zd_truth_icon_dui"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_zx_next"
+            android:layout_width="75dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_zx_ans"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/zd_truth_btn_next"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_trueans"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_below="@id/iv_zx_ans"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/tv_zx_next"
+            android:gravity="center"
+            android:text="正确答案:A、C、D"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

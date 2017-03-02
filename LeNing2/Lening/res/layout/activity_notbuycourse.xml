@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dise"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/iv_wmcourse_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_wmcourse_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="课程标题"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_wmcourse_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="上线时间"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_wmcourse_le"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/me_icon_le" />
+
+                    <TextView
+                        android:id="@+id/tv_wmcourse_le"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
+                        android:text="0.0"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_wmcourse_score"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/course_icon_star01" />
+
+                    <TextView
+                        android:id="@+id/tv_wmcourse_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
+                        android:text="0.0"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_wmcourse_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_back" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal" >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_wmcourse_info"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_wmcourse_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="16dp"
+                        android:text="介绍"
+                        android:textColor="@color/main" />
+
+                    <ImageView
+                        android:id="@+id/iv_wmcourse_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/main" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_wmcourse_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_wmcourse_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="16dp"
+                        android:text="评价"
+                        android:textColor="@color/zywz" />
+
+                    <ImageView
+                        android:id="@+id/iv_wmcourse_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/ciyao" />
+                </RelativeLayout>
+
+            
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+                android:id="@+id/vp_wmcourse"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/jianbianse"/>
+    
+    <TextView
+        android:id="@+id/tv_wmcourse_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="立即购买"
+        android:textColor="@color/main"
+        android:textSize="14sp" />
+
+</LinearLayout>

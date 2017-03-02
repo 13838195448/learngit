@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dise"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/my"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_addqa_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/tv_addqa_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="添加问题"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_addqa_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="105dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right|center_vertical"
+                android:text="发送"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/jianbiansetop" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_addqa_context"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:hint="写下问题描述..."
+                android:textColor="@color/ptdl"
+                android:textSize="14sp" />
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="5"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="139dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_tianjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加所属标签"
+                android:textSize="18sp" />
+
+            <GridView
+                android:id="@+id/gv_biaoqian"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reward"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yuanjiao"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_addqa_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_addqa_choosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="乐币"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/know_btn_choose" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@color/dise" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/dise" >
+
+                <EditText
+                    android:id="@+id/ed_addqa_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/dise"
+                    android:numeric="integer" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_addqa_spinner"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="金币"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

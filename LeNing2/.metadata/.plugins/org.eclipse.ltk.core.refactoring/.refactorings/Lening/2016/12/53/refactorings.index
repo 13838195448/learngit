@@ -1,0 +1,10 @@
+1482718529130	Extract method 'meiYouToupiao'
+1482718584798	Extract method 'yingJingTouPiao'
+1482718651651	Rename method 'yingJingTouPiao'
+1482724574900	Rename type 'Toupiao_Xuanxiang'
+1482734537936	Convert local variable 'sn_aux' to field
+1482735341370	Rename type 'StartZxACtivity'
+1482741792128	Convert local variable 'sn_aux' to field
+1482973221424	Convert local variable 'pk_vote' to field
+1482991610903	Delete element
+1482991698269	Rename resource 'default.png'

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/ll_search_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_back"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ll_search_back"
+            android:background="@android:color/white"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll_search_xuanxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/yuanjiao"
+                    android:gravity="center"
+                    android:text="课程"
+                    android:textColor="@color/ptdl"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/seek_select" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_search_neirong"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="3"
+                android:background="@drawable/yuanjiao"
+                android:hint="搜索平台内容"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/ptdl"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_search_delete"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/seek_del" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ll_search_top"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/jianbiansetop" />
+
+            <TextView
+                android:id="@+id/tv_search_histroy"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="历史搜索"
+                android:textColor="@color/ciyao"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/lv_search"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_search_delhistroy"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="清空历史搜索"
+                android:textColor="@color/ciyao"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_xuanxiang"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ll_search_sp"
+            android:background="@android:color/black" >
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dise" />
+
+                <TextView
+                    android:id="@+id/tv_search_kecheng"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="课程"
+                    android:textColor="@color/ptdl"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dise" />
+
+                <TextView
+                    android:id="@+id/tv_search_peixun"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="培训"
+                    android:textColor="@color/ptdl"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dise" />
+
+                <TextView
+                    android:id="@+id/tv_search_qa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="问答"
+                    android:textColor="@color/ptdl"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/jianbiansetop" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

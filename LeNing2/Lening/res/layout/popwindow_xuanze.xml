@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button 
+            android:id="@+id/bt_xuanze_man"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/yuanjiao"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/ptdl"
+            android:text="女"/>
+        
+        <Button 
+            android:id="@+id/bt_xuanze_woman"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/yuanjiao"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/ptdl"
+            android:text="男"/>
+        
+
+            <Button
+                android:id="@+id/bt_xuanze_quit"
+                android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp" 
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/yuanjiao"
+                android:gravity="center"
+                android:text="  取消    "
+                android:textColor="#ffff4444"
+                android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

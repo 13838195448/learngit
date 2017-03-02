@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpyf.lening"
+    android:versionCode="7"
+    android:versionName="1.1.7" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name=".ImageLoaderApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mpyf.lening.activity.activity.BeginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mpyf.lening.activity.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.GateAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ForgetpwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RegesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RegesinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NewpwsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.SerchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.FenleiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.FenleidelioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NLRZActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.BaomingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NLRZScanActivity"
+            android:screenOrientation="portrait" />
+
+        <span style="white-space:pre" >
+        </span>
+
+        <activity android:name="com.mpyf.lening.activity.activity.UploadxueliActivity" />
+        <activity android:name="com.mpyf.lening.activity.activity.ChangeImageActivity" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MessageinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NewsinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RmkcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.JPkcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.NotbuycourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.BuyedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.StudyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.YF_StudyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MycourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MycoursedayiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ChengjiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MynoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MynotedetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MycommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.PeixunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.PeixundetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ChangeinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ChangepwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyPeixunActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyPeixundetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.Moneyjilu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.QaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.AddnoteAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.AddqaAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.AddcommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.WatchnoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.KebaomingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.WatchdayiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyqaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZhuantiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mining.app.zxing.MipcaActivityCapture" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyrenzhengActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.PaihangbangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MoneydetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MingshiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MingshidetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.QadetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.FatieActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RepayQueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RepayloucengActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZicetestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.Qa_photoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog_Fullscreen" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.TestAnserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZhuantiDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.CommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.CommDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.AddPeixun_comActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZhidaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RiliActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.JingyanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZDnewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZDnewsInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.JingyandetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.JingyandetilZhiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyshoucangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.PaihangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.OthersInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyInterestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.RenWuACtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.TouPiaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZhenXiangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ShangChengActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ZiYuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.StartTouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.MyTouPiaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.StartZxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.TouDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.ShangQadetilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.Add_addressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.OrederQadetil_ShiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.OrederQadetil_XuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.CommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.CommentsedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.YF_AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpyf.lening.activity.activity.EditCommentsedActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="io.vov.vitamio.activity.InitActivity" >
+        </activity>
+    </application>
+
+</manifest>

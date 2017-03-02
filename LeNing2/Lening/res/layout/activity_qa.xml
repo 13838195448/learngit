@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a2d46f"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_qa_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_qa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="我的课程"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_qa_search"
+            android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="invisible"
+                android:background="@android:color/white">
+            
+            <EditText 
+                android:id="@+id/et_qa_ss_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"/>
+            
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/iv_qa_seek"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/home_btn_seek" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_qa_all"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/tv_qa_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部"
+                android:textColor="@color/my"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_qa_all"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/my" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qa_hot"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/tv_qa_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门"
+                android:textColor="@color/zywz"
+                android:layout_centerInParent="true"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/iv_qa_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_qa_goodpay"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/tv_qa_goodpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高悬赏"
+                android:layout_centerInParent="true"
+                android:textColor="@color/zywz"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/iv_qa_goodpay"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dise" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_qa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbiansetop" />
+    
+    <ImageView 
+        android:id="@+id/iv_qa_addqa"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/know_btn_add"/>
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

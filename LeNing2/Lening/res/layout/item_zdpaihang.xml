@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_zd_paiming"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/zd_leaderboard_icon_trophy2" />
+
+            <TextView
+                android:id="@+id/tv_zd_paiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:padding="3dp"
+                android:text="4"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/zd_info"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.mpyf.lening.Jutil.XCRoundImageView
+                android:id="@+id/iv_qaitem_touxiang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_defualt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_qaitem_truename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="王小三"
+                    android:textColor="@color/zywz"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_qaitem_honor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="初入江湖"
+                    android:textColor="@color/zywz"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_qaitem_honor_pic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/v1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/tv_zd_adoptnum"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="25"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_zd_adoptnum"
+                android:gravity="center_horizontal"
+                android:text="采纳数"
+                android:textColor="@color/zywz"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ECECEC" />
+
+</LinearLayout>

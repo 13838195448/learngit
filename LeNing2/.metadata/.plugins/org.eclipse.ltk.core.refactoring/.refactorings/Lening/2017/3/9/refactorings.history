@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.mpyf.lening.activity.activity.RenWuACtivity&apos; to &apos;RenWuActivity&apos;&#x0D;&#x0A;- Original project: &apos;Lening&apos;&#x0D;&#x0A;- Original element: &apos;com.mpyf.lening.activity.activity.RenWuACtivity&apos;&#x0D;&#x0A;- Renamed element: &apos;com.mpyf.lening.activity.activity.RenWuActivity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RenWuACtivity&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.mpyf.lening.activity.activity{RenWuACtivity.java[RenWuACtivity" matchStrategy="1" name="RenWuActivity" qualified="false" references="true" similarDeclarations="false" stamp="1488417042920" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_baoming_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="报名认证"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_baoming_save"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="15dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_baoming_tijiao"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="提交 "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@android:color/white" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="246dp"
+                        android:background="@color/dise" >
+
+                        <ImageView
+                            android:id="@+id/iv_baoming_topbg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="246dp"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/iv_baoming_zjz"
+                            android:layout_width="135dp"
+                            android:layout_height="196dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginTop="25dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/heiyuanjiao"
+                            android:src="@drawable/authe_btn_add" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_zjz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="上传证件照"
+                            android:textColor="@color/ptdl"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="姓名"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_name"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="性别"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_sex"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="手机号"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/et_baoming_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:maxLength="11"
+                            android:numeric="integer"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="邮箱"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/et_baoming_email"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:digits="1234567890.@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="身份证号"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/et_baoming_id"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:digits="1234567890xX"
+                            android:gravity="center_vertical"
+                            android:maxLength="18"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="所在单位"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/et_baoming_comp"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/ciyao"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="报考考区"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_kaoqu"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="业务方向"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_ywfx"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="产品及应用"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_cpjyy"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="专业领域"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_zhuanye"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="报考级别"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_jibie"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="学历"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/sp_baoming_xueli"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:text="选择学历"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/home_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/dise" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="报名费"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_bmf"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="5"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoming_bmftype"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="金币"
+                            android:textColor="@color/zywz"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/dise" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/dise" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/dise" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/dise" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/jianbiansetop" />
+    </RelativeLayout>
+
+</LinearLayout>

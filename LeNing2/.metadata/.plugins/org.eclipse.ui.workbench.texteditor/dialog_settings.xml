@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="297" key="DIALOG_WIDTH"/>
+		<item value="591" key="DIALOG_Y_ORIGIN"/>
+		<item value="1685" key="DIALOG_X_ORIGIN"/>
+		<item value="331" key="DIALOG_HEIGHT"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="true" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="showNext" key="selection"/>
+		<list key="findhistory">
+			<item value="tv_zx_next"/>
+			<item value="投票结果"/>
+			<item value="查看某个投票结果"/>
+			<item value="保存用户投票结果"/>
+			<item value="System"/>
+			<item value="fr"/>
+			<item value="pk_vote"/>
+			<item value="isdefault"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="rl_fr_my_info"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="382" key="DIALOG_Y_ORIGIN"/>
+		<item value="591" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

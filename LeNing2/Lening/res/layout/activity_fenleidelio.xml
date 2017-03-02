@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/xiaoxibg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_fenleidelio_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_fenleidelio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="分类详情"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout 
+            android:id="@+id/rl_fenleidelio_seek"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="invisible"
+            android:background="@android:color/white">
+        
+        <EditText 
+            android:id="@+id/et_fenleidelio_seek"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" 
+            android:layout_marginLeft="10dp"
+            android:hint="请输入搜索内容"
+            android:background="@color/touming"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_fenleidelio_seek"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/home_btn_seek" />
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+        android:id="@+id/ll_fenleidelio_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_fenleidelio_showleibie"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_fenleidelio_coursename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="子分类名称"
+                android:textColor="@color/my"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="4dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/sort_select" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_fenleidelio_zuire"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="按最热"
+            android:textColor="@color/my"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tv_fenleidelio_zuixin"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="按最新"
+            android:textColor="@color/ptdl"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+        <ListView
+        android:id="@+id/lv_fenleidelio_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@color/dise"
+        android:divider="@null"/>
+        
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbiansetop" />
+
+    
+    
+    <LinearLayout 
+        android:id="@+id/ll_fenleideilo_up"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    
+        <GridView 
+            android:id="@+id/gv_fenleidelio_fenlei"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:numColumns="3"/>
+            
+        <View
+            android:id="@+id/v_up" 
+            android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"/>
+        
+        </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

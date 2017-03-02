@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/my"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_addnote_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/tv_addnote_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="撰写笔记"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_addnote_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="105dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right|center_vertical"
+                android:text="完成"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/jianbiansetop" />
+
+        <LinearLayout
+            android:id="@+id/ll_addnote_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="55dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_addnote_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@color/touming"
+                android:hint="笔记标题。。。"
+                android:textColor="@color/zywz"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_addnote_context"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:hint="写回答。。。"
+                android:textColor="@color/ptdl"
+                android:textSize="14sp" />
+             <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="5"
+                android:verticalSpacing="5dp" >
+            </GridView>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

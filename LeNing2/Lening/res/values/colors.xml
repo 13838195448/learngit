@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!--  <color name="main">#41d092</color> -->
+   <color name="main">#a2d46f</color>
+    <color name="zywz">#4d4d4d</color>
+	<color name="ptdl">#666666</color>
+	<color name="ciyao">#979797</color>
+	<color name="dise">#f5f5f5</color>
+	<color name="touming">#00000000</color>
+	<color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color>
+      <color name="my">#a2d46f</color>
+     
+      
+      <color name="pic">#e0e1e6</color> 
+</resources>

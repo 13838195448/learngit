@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_quest_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="25dp"
+            android:text="jhdfjhsadfhlsdhfljsdfsdfd"
+            android:textColor="#4D4D4D"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/jianbiansetop" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <RadioButton
+            android:id="@+id/bt_right"
+            style="@style/bottom_tab_style"
+            android:background="@drawable/panduan_btn"
+            android:text="对" />
+
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:id="@+id/bt_err"
+            style="@style/bottom_tab_style"
+            android:background="@drawable/panduan_btn"
+            android:text="错" />
+    </RadioGroup>
+    
+      <TextView
+                android:id="@+id/tv_r_ans"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="正确答案是： A"
+                android:textColor="@color/ptdl"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_your_ans"
+                 android:visibility="gone"
+                 android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="你的答案是： A"
+                android:textColor="@color/ptdl"
+                android:textSize="14sp" />
+    
+
+</LinearLayout>

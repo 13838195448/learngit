@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_golditem_month"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dise" >
+
+        <TextView
+            android:id="@+id/tv_golditem_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="10dp"
+            android:text="--月"
+            android:textColor="@color/ptdl"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5" 
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <TextView 
+                android:id="@+id/tv_golditem_week"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/ciyao"
+            android:text="week"/>
+            
+            <TextView 
+                android:id="@+id/tv_golditem_date"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/ciyao"
+            android:text="date"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1" 
+            android:gravity="center">
+            
+            <ImageView 
+                android:id="@+id/iv_golditem_type"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_asset_icon_jin"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="5" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            
+            <TextView 
+                android:id="@+id/tv_golditem_num"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/zywz"
+            android:text="num"/>
+            
+            <TextView 
+                android:id="@+id/tv_golditem_rules"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/ptdl"
+            android:text="num"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <View 
+        android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/dise"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+package com.mpyf.lening.activity.activity;
+
+import com.mpyf.lening.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Window;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class EditCommentsedActivity extends Activity {
+private LinearLayout ll_editcomments_back;
+private TextView tv_editcomments_ok,tv_editcomments_title;
+
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_editcomments);
+		init();
+		getdate();
+		addlistenr();
+	}
+
+	private void init() {
+		ll_editcomments_back = (LinearLayout) findViewById(R.id.ll_editcomments_back);
+		tv_editcomments_ok = (TextView) findViewById(R.id.tv_editcomments_ok);
+		tv_editcomments_title=(TextView) findViewById(R.id.tv_editcomments_title);
+		iv_addcomment_start1 = (ImageView) findViewById(R.id.iv_addcomment_start1);
+		iv_addcomment_start2 = (ImageView) findViewById(R.id.iv_addcomment_start2);
+		iv_addcomment_start3 = (ImageView) findViewById(R.id.iv_addcomment_start3);
+		iv_addcomment_start4 = (ImageView) findViewById(R.id.iv_addcomment_start4);
+		iv_addcomment_start5 = (ImageView) findViewById(R.id.iv_addcomment_start5);
+		et_addcomment_context = (EditText) findViewById(R.id.et_addcomment_context);
+
+		stars[0] = iv_addcomment_start1;
+		stars[1] = iv_addcomment_start2;
+		stars[2] = iv_addcomment_start3;
+		stars[3] = iv_addcomment_start4;
+		stars[4] = iv_addcomment_start5;
+
+	}
+
+	private void getdate() {
+
+	}
+
+	private void addlistenr() {
+
+	}
+}

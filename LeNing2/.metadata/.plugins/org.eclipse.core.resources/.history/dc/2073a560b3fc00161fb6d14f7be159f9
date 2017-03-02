@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_zd_renwu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="我的任务"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="今日任务"
+                android:textColor="@color/ciyao"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_denglu"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <!-- 左边的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/zd_know_checkin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="知道签到"
+                        android:textColor="@color/ciyao"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 中间的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当日在APP登录账号"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zd_rwqian_jiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="卡数: 默认的 张刮刮卡"
+                        android:textColor="#A2d46F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <!-- 右边的 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_zd_rwling"
+                        android:layout_width="53dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/zd_know_btn_receive_nor" />
+
+                    <TextView
+                        android:id="@+id/tv_zd_rwqian"
+                        android:layout_width="13dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/zd_task_icon_down" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 下拉显示的内容 -->
+
+            <LinearLayout
+                android:id="@+id/ll_zd_qian_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="任务说明:"
+                    android:textColor="@color/ciyao"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:text="1.每天登陆APP,即可完成任务\n2.每日零点任务重置,完成后记得领取刮刮卡\n3.任务获得刮刮卡,可以领取相应的奖励"
+                    android:textColor="@color/ciyao"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:text="你已经完成任务了,赶紧领取奖励吧!"
+                    android:textColor="@color/ciyao"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_ling"
+                        android:layout_width="210dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#A2D570"
+                        android:gravity="center"
+                        android:text="点击领取"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_da"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <!-- 左边的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/zd_know_answer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答题赚经验"
+                        android:textColor="@color/ciyao"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 中间的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_da_taskname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当天回答1个问题"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_da_jiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="奖励: +5经验值"
+                        android:textColor="#A2d46F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <!-- 右边的 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_da_shu"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="0/10"
+                        android:textColor="@color/ciyao"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_da_ling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/zd_know_btn_receive_nor"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_da"
+                        android:layout_width="13dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/zd_task_icon_down" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 下拉显示的内容 -->
+
+            <LinearLayout
+                android:id="@+id/ll_da_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="任务说明:"
+                    android:textColor="@color/ciyao"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_da_shuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:text="1.当天在APP回答任意1道问题，即可完成任务\n2.每日零点任务重置,完成后记得领取经验"
+                    android:textColor="@color/ciyao"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_da_ling"
+                        android:layout_width="210dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#A2D570"
+                        android:gravity="center"
+                        android:text="开始答题"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cai"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <!-- 左边的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/zd_know_adoption" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="采纳赚经验"
+                        android:textColor="@color/ciyao"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 中间的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_cai_taskname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当天收到1个问答被采纳"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cai_jiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="奖励: +5经验值"
+                        android:textColor="#A2d46F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <!-- 右边的 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_cai_shu"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="大头啊"
+                        android:textColor="@color/ciyao"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_cai_ling"
+                        android:layout_width="53dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/zd_know_btn_receive_nor"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_cai"
+                        android:layout_width="13dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/zd_task_icon_down" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 下拉显示的内容 -->
+
+            <LinearLayout
+                android:id="@+id/ll_cai_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="任务说明:"
+                    android:textColor="@color/ciyao"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_cai_shuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:text="1.当天在APP被采纳1个答案,即可完成任务\n2.每日零点任务重置,完成后记得领取经验"
+                    android:textColor="@color/ciyao"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_cai_ling"
+                        android:layout_width="210dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#A2D570"
+                        android:gravity="center"
+                        android:text="答题赢采纳"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="成就任务"
+                android:textColor="@color/ciyao"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_lei"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <!-- 左边的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ad_know_grandtotal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计采纳"
+                        android:textColor="@color/ciyao"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 中间的 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_lei_taskname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计采纳达到10次"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_lei_jiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="奖励: +300经验值  +300乐币"
+                        android:textColor="#A2d46F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <!-- 右边的 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_lei_shu"
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="0/1"
+                        android:textColor="@color/ciyao"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_lei_ling"
+                        android:layout_width="53dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/zd_know_btn_receive_nor"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_lei"
+                        android:layout_width="13dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/zd_task_icon_down" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 下拉显示的内容 -->
+
+            <LinearLayout
+                android:id="@+id/ll_lei_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="任务说明:"
+                    android:textColor="@color/ciyao"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_lei_shuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:text="在APP中累计被采纳10个答案，即可完成任务"
+                    android:textColor="@color/ciyao"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_lei_ling"
+                        android:layout_width="210dp"
+                        android:layout_height="43dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#A2D570"
+                        android:gravity="center"
+                        android:text="答题赢采纳"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

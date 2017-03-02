@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/xiaoxibg"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.mpyf.lening.Jutil.XCRoundImageView
+            android:id="@+id/iv_qaitem_touxiang"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_defualt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_qaitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="王小三"
+                android:textColor="@color/zywz"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_qaitem_chenghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="初入江湖"
+                android:textColor="@color/zywz"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qaitem_dengji"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/v1" />
+
+        <TextView
+            android:id="@+id/tv_NUM"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_qa_payway"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/know_icon_le" />
+
+        <TextView
+            android:id="@+id/tv_qaitem_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/know_icon_news" />
+
+        <TextView
+            android:id="@+id/tv_qaitem_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_qaitem_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_wenda_shoucang"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/know_collect_nor" />
+
+            <TextView
+                android:id="@+id/tv_wenda_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="收藏"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_qaitem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="title"
+        android:textColor="@color/zywz"
+        android:textSize="15sp" />
+
+    <com.mpyf.lening.Jutil.MyGridview
+        android:id="@+id/gv_pic"
+        android:layout_width="296dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/dise" />
+
+</LinearLayout>

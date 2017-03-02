@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/xiaoxibg"
+    android:background="@color/dise"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_chengjidelio_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="成绩查询详情"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbiansetop" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" 
+        android:background="@drawable/yuanjiao">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            
+            <View
+                
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/xiaolvyuanjiao" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="认证名称 "
+                            android:textColor="@color/ciyao"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_chengjideilo_cername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="认证全名称"
+                            android:textColor="@color/zywz"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="姓名"
+                            android:textColor="@color/ciyao"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_chengjideilo_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="----"
+                            android:textColor="@color/ptdl"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="认证结果"
+                            android:textColor="@color/ciyao"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_chengjidelio_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="------"
+                            android:textColor="@color/ptdl"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="认证级别 "
+                            android:textColor="@color/ciyao"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_chengjidelio_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="------"
+                            android:textColor="@color/ptdl"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+</RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/dise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="手机号"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="邮箱"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_email"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="专业方向"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_zhuanye"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="-----"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="产品级别"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_cpjb"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="专业领域"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_zyly"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="报考级别"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_bkjb"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="-----"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="线上学习（已折算）"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_xsxx"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="考试成绩（未折算）"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_chengji"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="知识技能"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_zsjn"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="-----"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="考试结果"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_ksjg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="获取资格"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_hqzg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="-------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="评审得分"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_psdf"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="综合得分"
+                    android:textColor="@color/ciyao"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_chengjidelio_zhdf"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:text="-------"
+                    android:textColor="@color/ptdl"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

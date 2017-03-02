@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"   
+android:oneshot="true">   
+<item android:drawable="@drawable/qddh01" android:duration="100" />   
+<item android:drawable="@drawable/qddh02" android:duration="100" />   
+<item android:drawable="@drawable/qddh03" android:duration="100" />   
+<item android:drawable="@drawable/qddh04" android:duration="100" />   
+<item android:drawable="@drawable/qddh05" android:duration="100" />   
+<item android:drawable="@drawable/qddh06" android:duration="100" />   
+<item android:drawable="@drawable/qddh07" android:duration="100" />   
+<item android:drawable="@drawable/qddh08" android:duration="100" />   
+<item android:drawable="@drawable/qddh09" android:duration="100" />   
+<item android:drawable="@drawable/qddh10" android:duration="100" />   
+<item android:drawable="@drawable/qddh11" android:duration="100" />   
+<item android:drawable="@drawable/qddh12" android:duration="100" />   
+<item android:drawable="@drawable/qddh13" android:duration="100" />   
+<item android:drawable="@drawable/qddh14" android:duration="100" />   
+<item android:drawable="@drawable/qddh15" android:duration="100" />   
+<item android:drawable="@drawable/qddh16" android:duration="90" />   
+<item android:drawable="@drawable/qddh17" android:duration="90" />   
+<item android:drawable="@drawable/qddh18" android:duration="90" />  
+</animation-list> 

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_addcomment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/tv_addcomment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="撰写评论"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_addcomment_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="105dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right|center_vertical"
+                android:text="编辑"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/jianbiansetop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_addcomment_start1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/course_icon_star01" />
+
+            <ImageView
+                android:id="@+id/iv_addcomment_start2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/course_icon_star01" />
+
+            <ImageView
+                android:id="@+id/iv_addcomment_start3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/course_icon_star01" />
+
+            <ImageView
+                android:id="@+id/iv_addcomment_start4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/course_icon_star01" />
+
+            <ImageView
+                android:id="@+id/iv_addcomment_start5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/course_icon_star01" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dise" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_addcomment_context"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:hint="内容..."
+                android:textColor="@color/zywz"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbianse" />
+
+</LinearLayout>

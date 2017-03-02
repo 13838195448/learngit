@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_buyeddayi_isanswered"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="已回答"
+        android:textColor="@color/ciyao"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_buyeddayi_context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="3"
+        android:text="问题内容"
+        android:textColor="@color/ptdl"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_buyeddayi_from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="来自课件"
+        android:textColor="@color/ciyao"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_buyeddayi_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dise" />
+
+        <TextView
+            android:id="@+id/tv_buyeddayi_answer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="3"
+            android:text="回答"
+            android:textColor="@color/ptdl"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/dise" />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.mpyf.lening.Jutil.XCRoundImageView
+            android:id="@+id/iv_qaa_touxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_defualt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_qaa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="楼主"
+                android:textColor="@color/ptdl"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_qaa_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/ciyao"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_reply"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:src="@drawable/me_know_btn_reply" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_qaa_context"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="title"
+        android:textColor="@color/zywz"
+        android:textSize="15sp" />
+
+    <com.mpyf.lening.Jutil.MyGridview
+        android:id="@+id/gv_pic"
+        android:layout_width="296dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="2dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/dise"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:minHeight="70dp"
+            android:orientation="horizontal" >
+
+            <com.mpyf.lening.Jutil.XCRoundImageView
+                android:id="@+id/iv_qaa_lztouxiang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_defualt" />
+
+            <TextView
+                android:id="@+id/tv_qaa_lzname"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="name"
+                android:textColor="@color/zywz"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_qa_payway"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/know_icon_le" />
+
+            <TextView
+                android:id="@+id/tv_qaa_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/know_icon_news" />
+
+            <TextView
+                android:id="@+id/tv_qaa_lzcomments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_qaa_lztitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="title"
+            android:textColor="@color/zywz"
+            android:textSize="15sp" />
+
+        <com.mpyf.lening.Jutil.MyGridview
+            android:id="@+id/gv_pic2"
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="2dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/dise" />
+
+</LinearLayout>

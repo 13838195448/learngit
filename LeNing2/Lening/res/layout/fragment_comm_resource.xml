@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/my"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_ziyuan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_ziyuan_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="资源"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/jianbiansetop" />
+
+    <RadioGroup
+        android:id="@+id/rg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bt_upload"
+            style="@style/comm_botton_tab_style"
+            android:drawableLeft="@drawable/comm_radio_btn"
+            android:paddingLeft="40dp"
+            android:paddingRight="30dp"
+            android:text="最新上传" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="#ddd" />
+
+        <RadioButton
+            android:id="@+id/bt_download"
+            style="@style/comm_botton_tab_style"
+            android:drawableLeft="@drawable/comm_radio_btn2"
+            android:paddingLeft="45dp"
+            android:paddingRight="25dp"
+            android:text="下载最多" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/jianbiansetop" />
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

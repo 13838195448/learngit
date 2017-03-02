@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/mark_select"
+        android:ellipsize="end"
+        android:enabled="false"
+        android:gravity="center"
+        android:maxEms="6"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="TextView" />
+
+</LinearLayout>

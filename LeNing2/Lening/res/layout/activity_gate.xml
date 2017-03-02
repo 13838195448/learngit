@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_gate_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon_circle_s" />
+
+        <ImageView
+            android:id="@+id/iv_gate_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home_icon_circle_d" />
+
+        <ImageView
+            android:id="@+id/iv_gate_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_icon_circle_d" />
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/tv_gate_goin"
+        android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:background="@color/touming"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/ciyao"
+            android:text="跳过，直接进入"/>
+    
+</RelativeLayout>

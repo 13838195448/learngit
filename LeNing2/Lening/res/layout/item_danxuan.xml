@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_danxuan_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_danxuan"
+        android:paddingBottom="19dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="19dp"
+        android:text="A,djfhsjkdfhsjkldsdfdsfdsfdffffffffffffffffff"
+        android:textColor="#666666"
+        android:textSize="14sp"
+         android:maxLines="4" />
+     
+    <!--   <TextView
+        android:id="@+id/tv_danxuan_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yunajiao_bai"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+      	android:gravity="center_vertical"
+        android:text="A,djfhsjkdfhsjkld"
+        android:textColor="#666666"
+        android:textSize="14sp" /> -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dise"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/black" >
+
+        <io.vov.vitamio.widget.CenterLayout
+            android:id="@+id/cl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black" >
+
+            <com.mpyf.lening.Jutil.MyVideoview
+                android:id="@+id/vv_study"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true" />
+        </io.vov.vitamio.widget.CenterLayout>
+
+        <View
+            android:id="@+id/view_study_vv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_study_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_study_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/rl_study_back"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:text="视频名称"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_study_fullscreen"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/course_btn_unfold" />
+
+        <ImageView
+            android:id="@+id/iv_study_play"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/course_btn_start" />
+
+         <TextView
+            android:id="@+id/tv_study_played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/sb_study_played"
+            style="@style/MediaController_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/tv_study_total"
+            android:layout_toRightOf="@+id/tv_study_played"
+            android:max="100"
+            android:thumb="@drawable/course_btn_glide" />
+
+        <TextView
+            android:id="@+id/tv_study_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" /> 
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_study_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_study_note"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_study_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp"
+                android:text="笔记"
+                android:textColor="@color/main" />
+
+            <ImageView
+                android:id="@+id/iv_study_note"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_study_question"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_study_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp"
+                android:text="提问"
+                android:textColor="@color/zywz" />
+
+            <ImageView
+                android:id="@+id/iv_study_question"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_study_comment"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_study_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp"
+                android:text="评价"
+                android:textColor="@color/zywz" />
+
+            <ImageView
+                android:id="@+id/iv_study_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dise" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_study"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="3" />
+
+</LinearLayout>

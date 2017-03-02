@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dise"
+    android:orientation="vertical" >
+
+    <ScrollView 
+        android:id="@+id/sv_courseinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/dise"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="课程介绍"
+            android:textColor="@color/zywz"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="1dp">
+        
+        <TextView 
+            android:id="@+id/tv_courseinfo_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/zywz"
+            android:text="课程介绍"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF">
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/tv_courseinfo_teacher"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zywz"
+            android:textSize="16sp"
+            android:text="--"/>
+            
+            <TextView 
+                
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/ciyao"
+            android:textSize="10sp"
+            android:text="讲师"/>
+            
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/dise"/>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/tv_courseinfo_buynum"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zywz"
+            android:textSize="16sp"
+            android:text="0"/>
+            
+            <TextView 
+                
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/ciyao"
+            android:textSize="10sp"
+            android:text="购买人数"/>
+            
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/dise"/>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+            
+            <TextView 
+                android:id="@+id/tv_courseinfo_resnum"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zywz"
+            android:textSize="16sp"
+            android:text="0"/>
+            
+            <TextView 
+                
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/ciyao"
+            android:textSize="10sp"
+            android:text="课件"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="包含课件"
+            android:textColor="@color/zywz"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    
+    <com.mpyf.lening.Jutil.MyListView 
+        android:id="@+id/lv_courseinfo_kejian"
+        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

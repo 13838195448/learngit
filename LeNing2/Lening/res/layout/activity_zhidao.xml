@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/jianbiansetop" />
+    <!-- 首页 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_zhidao_shouye"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/dise"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_zhidao_shouye"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zd_btn_home_n" />
+
+            <TextView
+                android:id="@+id/tv_zhidao_shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="首页"
+                android:textColor="@color/ciyao"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 问答 -->
+
+        <LinearLayout
+            android:id="@+id/home_ask"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/dise"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_zhidao_wenda"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zd_know_answer_sel" />
+
+            <TextView
+                android:id="@+id/tv_zhidao_wenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="问答"
+                android:textColor="@color/ciyao"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 活动 -->
+
+        <LinearLayout
+            android:id="@+id/home_event"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/dise"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_zhidao_huodong"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zd_know_active_nor" />
+
+            <TextView
+                android:id="@+id/tv_zhidao_huodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="活动"
+                android:textColor="@color/ciyao"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 我 -->
+
+        <LinearLayout
+            android:id="@+id/home_my"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/dise"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_zhidao_wo"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/zd_btn_me_n" />
+
+            <TextView
+                android:id="@+id/tv_zhidao_wo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="我"
+                android:textColor="@color/ciyao"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

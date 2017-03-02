@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yuanjiao"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/tv_version_main" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+    	android:textSize="16sp"
+    	android:textColor="@color/zywz"
+    	android:text="发现新的版本，是否立即更新"/>
+
+    <LinearLayout
+        android:id="@+id/ll_version_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal" >
+        
+        <Button
+        android:id="@+id/bt_version_quit" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:textSize="16sp"
+    	android:background="@android:color/white"
+    	android:textColor="@color/zywz"
+    	android:text="取消"/>
+        
+        <Button
+        android:id="@+id/bt_version_download" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+    	android:textSize="16sp"
+    	android:background="@android:color/white"
+    	android:textColor="@color/main"
+    	android:text="立即下载"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

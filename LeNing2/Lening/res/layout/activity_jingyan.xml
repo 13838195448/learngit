@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/xiaoxibg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dise"
+    android:orientation="vertical"  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_jingyan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_jingyanjilu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="经验值详情"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" 
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_jingyan_get"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/tv_jingyan_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="收入"
+                android:textColor="@color/main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_jingyan_get"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/main" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_jingyan_use"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             >
+
+            <TextView
+                android:id="@+id/tv_jingyan_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出"
+                android:textColor="@color/zywz"
+                android:layout_centerInParent="true"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/iv_jingyan_use"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dise" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbiansetop" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_jingyan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/jianbianse" />
+
+</LinearLayout>
+

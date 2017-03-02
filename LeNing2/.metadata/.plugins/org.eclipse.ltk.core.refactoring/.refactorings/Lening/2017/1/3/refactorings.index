@@ -1,0 +1,13 @@
+1484545577275	Rename type 'AddaddActivity'
+1484545593117	Rename type 'Add_addActivity'
+1484634367398	Convert local variable 'name' to field
+1484634430985	Convert local variable 'buyWay' to field
+1484634653579	Convert local variable 'amount' to field
+1484642564042	Convert local variable 'pk_adr' to field
+1484734528585	Convert local variable 'pk_adr' to field
+1484804168401	Convert local variable 'isCom' to field
+1484808218148	Convert local variable 'dialog' to field
+1484818853111	Convert local variable 'pk_order' to field
+1484818855868	Convert local variable 'pk_goods' to field
+1484818858483	Convert local variable 'pk_Com' to field
+1484895307577	Convert local variable 'adapter' to field

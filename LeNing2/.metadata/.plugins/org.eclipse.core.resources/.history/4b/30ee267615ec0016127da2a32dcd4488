@@ -1,0 +1,32 @@
+package com.mpyf.lening.activity.activity;
+
+import com.mpyf.lening.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Window;
+
+public class EditCommentsedActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_editcomments);
+		init();
+		getdate();
+		addlistenr();
+	}
+
+	private void init() {
+
+	}
+
+	private void getdate() {
+
+	}
+
+	private void addlistenr() {
+
+	}
+}
