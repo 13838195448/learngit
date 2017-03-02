@@ -47,6 +47,10 @@ git   分布式版本控制系统
 
 
 
+与远程库相连接
+	只要本地作了提交
+	git push origin master
+
 
 
 	
