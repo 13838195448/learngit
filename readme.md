@@ -19,9 +19,11 @@ git   分布式版本控制系统
 								
 	
 	git status 查看仓库当前的状态	
-	git diff 文件名  查看不同
+	git diff 文件名  查看文件与之前的不同
 
+提交修改和提交新文件是一样的两步   1.git add 2.git commit 
 
+ 
 
 
 
