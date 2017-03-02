@@ -74,3 +74,6 @@ git branch 分支名
 删除分支
  git branch -d 分支名
 
+修改最后一行
+
+Creating a new branch is quick & simple.
