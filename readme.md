@@ -35,9 +35,15 @@ git   分布式版本控制系统
 	回退到指定版本  git reset --hard  版本号
 
 	记录每一次命令  	git reflog
+
+	查看工作区和版本库里面最新版本的区别    git diff HEAD -- 文件名
 	
+	把文件在工作区的修改全部撤销 	git checkout -- 文件名（文件做了修改还没有 add 的时候）
+	
+	把暂存区的修改撤销掉 		git reset HEAD file （ 文件做了修改 已经 add 到暂存区）
 
 
+My stupid boss still prefers SVN
 
 
 
