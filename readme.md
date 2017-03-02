@@ -58,3 +58,26 @@ git   分布式版本控制系统
 创建合并分支
 ··· git checkout -b 分支名  相当于 1.git branch 分支名   2.git checkout 分支名
  
+
+
+
+创建分支
+···  git checkout -b 分支名  相当于 1.git branch 分支名 2.git checkout 分支名 
+
+
+
+
+
+
+<<<<<<< HEAD
+切换分支
+ git checkout 分支名 
+
+合并分支
+ git merge 分支名
+=======
+	
+创建合并分支
+··· git checkout -b 分支名  相当于 1.git branch 分支名   2.git checkout 分支名
+ 
+>>>>>>> test
