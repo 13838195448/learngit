@@ -48,9 +48,10 @@ git   分布式版本控制系统
 
 
 与远程库相连接
-	只要本地作了提交
+	只要本地作了更改，向远程提交
 	git push origin master
-
+克隆远程项目
+	git clone 地址
 
 
 	
