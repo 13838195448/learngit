@@ -54,52 +54,23 @@ git   分布式版本控制系统
 	git clone 地址
 
 
+ 
 
-
+查看分支
+	git branch
 
 创建分支
-	git checkout -b 分支名  相当于 1.git branch 分支名 2.git checkout 分支名 
+git branch 分支名
 
-
-
-
-
-
-<<<<<<< HEAD
 切换分支
  git checkout 分支名 
 
-合并分支
- git merge 分支名
-=======
-	
-创建合并分支
-··· git checkout -b 分支名  相当于 1.git branch 分支名   2.git checkout 分支名
- 
-<<<<<<< HEAD
->>>>>>> test
-=======
-
-
-
-创建分支
-···  git checkout -b 分支名  相当于 1.git branch 分支名 2.git checkout 分支名 
-
-
-
-
-
-
-<<<<<<< HEAD
-切换分支
- git checkout 分支名 
+创建并切换分支
+···  git checkout -b 分支名  相当于 1.git branch 分支名 2.git checkout 分支名
 
 合并分支
  git merge 分支名
-=======
-	
-创建合并分支
-··· git checkout -b 分支名  相当于 1.git branch 分支名   2.git checkout 分支名
- 
->>>>>>> test
->>>>>>> test
+
+删除分支
+ git branch -d 分支名
+
